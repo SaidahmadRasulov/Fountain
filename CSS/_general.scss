@@ -1,0 +1,57 @@
+$orange: #FF6F28;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&family=Source+Sans+3:wght@200;300;400;500;600;700;800;900&display=swap');
+@import './_blocks/header';
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Source Sans 3', sans-serif;
+    transition: all .3s ease-in-out;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+button {
+    padding: 18px 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: $orange;
+    border: 1px solid #FF6F28;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    &.regster {
+        padding: 1rem 4rem;
+    }
+    &:hover {
+        background-color: transparent;
+        color: $orange;
+    }
+    &.small_btn {
+        background-color: white;
+        color: $orange;
+        padding: 8px 20px;
+        &:hover {
+            background-color: $orange;
+            color: white;
+        }
+    }
+}

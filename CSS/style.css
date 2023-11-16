@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&family=Source+Sans+3:wght@200;300;400;500;600;700;800;900&display=swap");
+header {
+  height: 100vh;
+  background-image: url(../../Assets/headerBg.png);
+  background-size: cover;
+}
+header .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+header .navbar .navbar__logo {
+  color: #FF6F28;
+}
+header .navbar .nav__group {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+header .navbar .nav__group a {
+  color: white;
+  position: relative;
+}
+header .navbar .nav__group a:hover {
+  color: #FF6F28;
+}
+header .navbar .nav__group a:hover::before {
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+header .navbar .nav__group a::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 3px;
+  background-color: #FF6F28;
+  bottom: 0;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+header .navbar .navbar__group {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1rem;
+  color: white;
+}
+header .navbar .navbar__group i {
+  font-size: 1.2rem;
+}
+header .header__content {
+  text-align: center;
+  padding-top: 8rem;
+  color: white;
+  width: 60%;
+  margin: 0 auto;
+}
+header .header__content h1 {
+  font-size: 60px;
+}
+header .header__content p {
+  margin: 2rem 0;
+  font-size: 24px;
+}
+
+@media (min-width: 0px) and (max-width: 425px) {
+  header {
+    height: 100%;
+    background-repeat: no-repeat;
+  }
+  header .navbar {
+    padding: 0 1rem;
+  }
+  header .navbar .nav__group {
+    display: none;
+  }
+  header .navbar .navbar__group {
+    display: none;
+  }
+  header .header__content {
+    width: 90%;
+    padding: 0 0 2rem 0;
+  }
+  header .header__content h1 {
+    font-size: 2rem;
+  }
+  header .header__content p {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 425px) and (max-width: 768px) {
+  header {
+    height: 100%;
+    background-repeat: no-repeat;
+  }
+  header .navbar {
+    padding: 1rem;
+  }
+  header .navbar .nav__group {
+    display: none;
+  }
+  header .navbar .navbar__group {
+    display: flex;
+  }
+  header .header__content {
+    width: 90%;
+    padding: 0 0 2rem 0;
+  }
+  header .header__content h1 {
+    font-size: 2rem;
+  }
+  header .header__content p {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  header .navbar {
+    padding: 1rem;
+  }
+  header .header__content {
+    width: 80%;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-family: "Source Sans 3", sans-serif;
+  transition: all 0.3s ease-in-out;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+button {
+  padding: 18px 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: #FF6F28;
+  border: 1px solid #FF6F28;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+button.regster {
+  padding: 1rem 4rem;
+}
+button:hover {
+  background-color: transparent;
+  color: #FF6F28;
+}
+button.small_btn {
+  background-color: white;
+  color: #FF6F28;
+  padding: 8px 20px;
+}
+button.small_btn:hover {
+  background-color: #FF6F28;
+  color: white;
+}/*# sourceMappingURL=style.css.map */
